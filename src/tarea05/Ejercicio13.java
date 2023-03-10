@@ -41,8 +41,8 @@ public class Ejercicio13 {
 			JOptionPane.showMessageDialog(null, ("Has escogido la división y el resultado es :" + resultadoDecimal));
 			break;
 		case "^":
-			resultado = num1 ^ num2;
-			JOptionPane.showMessageDialog(null, ("Has escogido la potencia y el resultado es :" + resultado));
+			resultadoDecimal = Math.pow(num1, num2);
+			JOptionPane.showMessageDialog(null, ("Has escogido la potencia y el resultado es :" + resultadoDecimal));
 			break;
 		case "%":
 			resultado = num1 % num2;

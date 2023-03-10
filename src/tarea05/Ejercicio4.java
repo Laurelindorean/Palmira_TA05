@@ -19,8 +19,8 @@ public class Ejercicio4 {
 	public void calculaArea() {
 
 		String numero = JOptionPane.showInputDialog("Introduce el radio para calcular el área de nuestro circulo");
-		double radio = Math.PI * Math.pow(Double.parseDouble(numero), 2);
-		JOptionPane.showMessageDialog(null, "El radio del circulo és" + radio);
+		double area = Math.PI * Math.pow(Double.parseDouble(numero), 2);
+		JOptionPane.showMessageDialog(null, "El area del circulo és" + area);
 	}
 
 }
