@@ -16,9 +16,9 @@ public class Ejercicio5 {
 	 * no lo es, también debemos indicarlo.
 	 */
 	public void divisible() {
-		Scanner sc = new Scanner(System.in);
+		
 		System.out.println("Introduce un número por teclado y te diré si es divisible entre 2: ");
-		int num = sc.nextInt();
+		int num = pedirNumero();
 		if (esDivisible(num, 2)) {
 			System.out.println("El número " + num + " es divisible entre 2");
 		} else {
@@ -29,6 +29,12 @@ public class Ejercicio5 {
 	public boolean esDivisible(double num1, double num2) {
 
 		return (num1 % num2) == 0;
+	}
+	
+	public static int pedirNumero() {
+		Scanner sc = new Scanner(System.in);
+		int num = sc.nextInt();
+		return num;
 	}
 
 }
